@@ -1,0 +1,100 @@
+\documentclass{ctexart}
+\usepackage{amsmath, amsthm, amssymb, graphicx, geometry, arydshln}
+\usepackage{tcolorbox} % box制作基本宏包
+\usepackage{varwidth} % box宽度设置需要
+\geometry{left=2.54cm , right=2.54cm , top=3.17cm , bottom=3.17cm}
+
+\title{Liner Algebra Notes}
+\author{lamaper}
+\date{\today}
+
+\begin{document}
+    \maketitle
+
+    \begin{abstract}
+        这是线性代数B这门课的学习笔记，主要记录一些关键的习题和知识点，以及做题时的一些思路。同时
+        也是对Latex的一次练习。
+    \end{abstract}
+
+    \section{常用定理与推论}
+        \subsection{矩阵的秩rank}
+        对于一个矩阵A，如果A的秩为r，则有：
+        
+        \textbf{\fangsong r(A) = 行阶梯型矩阵的非零行行数 = 有效方程的个数 = 独立向量的个数 = 非零子式的最高阶数}
+        
+        从行的角度来看，矩阵是线性方程组；而从列的角度来看，矩阵是列向量的集合。如此，
+        从不同的角度我们都可以理解rank这个概念。
+        \subsection{分块矩阵}
+            \subsubsection{对角线的可逆矩阵}
+            设$\mathbf{A}$是$m$阶的方阵，$\mathbf{D}$是$n$阶的方阵。如果$A$和$D$都是可逆的，那么
+            $\begin{bmatrix}
+                \mathbf{A} & 0 \\
+                0 & \mathbf{D} \\
+            \end{bmatrix}$是可逆矩阵。进一步地，
+            $
+            \begin{bmatrix}
+                \mathbf{A} & 0 \\
+                0 & \mathbf{D} \\
+            \end{bmatrix}^{-1} = \begin{bmatrix}
+                \mathbf{A}^{-1} & 0 \\
+                0 & \mathbf{D}^{-1} \\
+            \end{bmatrix}
+            $。然而，这个结论不适用于反对角线矩阵。
+            \subsubsection{反对角线矩阵的可逆矩阵}
+            设$\mathbf{A}$是$m$阶的方阵，$\mathbf{D}$是$n$阶的方阵。如果$A$和$\mathbf{D}$都是可逆的，那么
+            $\begin{bmatrix}
+                0 & \mathbf{A} \\
+                \mathbf{D} & 0 \\
+            \end{bmatrix}$是可逆矩阵。进一步地，
+            $
+            \begin{bmatrix}
+                0 & \mathbf{A} \\
+                \mathbf{D} & 0 \\
+            \end{bmatrix}^{-1} = \begin{bmatrix}
+                0 & \mathbf{D}^{-1} \\
+                \mathbf{A}^{-1} & 0 \\
+            \end{bmatrix}
+            $。可以观察到，这里矩阵$\mathbf{A}$与$\mathbf{D}$在取逆矩阵的时候进行了“对调”，这是一个很有意思的现象，在实际应用中也需要格外注意。
+    \section{典型例题}
+            \subsection{矩阵}
+            \begin{itemize}
+                \item \textbf{例题1}：设$\mathbf{A}$是一个$n$阶的方阵，且$\mathbf{A}^2~-2\mathbf{A}~-\mathbf{I}~=~\mathbf{0}$,求$(\mathbf{A}-2\mathbf{I})^{-1}$
+            \end{itemize}
+            
+            {\fangsong 类似的提醒一般都需要因式分解，且常用待定系数法来解决问题}\\
+            
+            解：
+
+            设$(\mathbf{A}-2\mathbf{I})(\mathbf{A}+n_1\mathbf{I})=n_2\mathbf{I}$,
+            
+            展开并整理可以得到:
+            $\mathbf{A}^2+(n_1-2)\mathbf{A}+(-2n_1-n_2)\mathbf{I}=\mathbf{0}$,
+            其中$\begin{cases}
+                n_1-2=-2\\
+                -2n_1-n_2=-1
+            \end{cases}$
+            
+            解得：$(\mathbf{A}-2\mathbf{I})\mathbf{A}=\mathbf{I}$,
+            
+            所以$(\mathbf{A}-2\mathbf{I})^{-1} = \mathbf{A}$，证毕。\\
+
+
+            在这个题中，用待定系数法显得比较繁琐，可以直接通过移项看出结果，但是这里介绍的是通法，是一种思想，其理论基础是：
+            $$ \mathbf{AA^{-1}}~=~\mathbf{I}$$
+            \vrule width11cm height1.5pt depth-1pt %这是一条线
+            %需要注意的是，这里要使用虚线和实线，必须引入arydshln包，而且必须在array之后引入
+            
+            https://zhuanlan.zhihu.com/p/266267223
+            $$
+            \begin{array}{c|c:c}
+                1 & 4 & 5\\
+                1 & 6 & 10\\
+                2 & 5 & 11\\
+            \end{array}
+            $$
+
+            %\texttt{https://blog.csdn.net/qq\_46673125/article/details/141362565}
+
+            https://www.zhihu.com/question/362654946/answer/2364047739
+            
+\end{document}
