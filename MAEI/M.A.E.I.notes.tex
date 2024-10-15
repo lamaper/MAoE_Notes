@@ -108,8 +108,11 @@
                 \textbf{类型} & \textbf{操作} & \textbf{最终形式} \\  % Table header
                 \midrule
                 $\frac{0}{0}$或$\frac{\infty}{\infty}$ & 直接计算 &  \\  %第一行数据
+                \midrule
                 $0 \cdot \infty$ & 恒等变化 & $\frac{0}{\frac{1}{\infty}}$或者$\frac{\infty}{\frac{1}{0}}$\\  %第二行数据
+                \midrule
                 $\infty - \infty$ & 通分 & $\frac{\infty}{\infty}$或者$\frac{0}{0}$ \\  %第三行数据
+                \midrule
                 $\infty ^ 0$或者$0^0$或者$1^\infty$ & 朗博同构：$\lim u^v = e^{\lim(v\ln u)}$ & $\frac{0}{\frac{1}{\infty}}$或者$\frac{\infty}{\frac{1}{0}}$\\
                 \bottomrule
             \end{tabular}
@@ -231,8 +234,6 @@
             
             回代$\alpha = -1$，则有$\lim\limits_{x \to +\infty} (\sqrt[3]{1-x^{3}}+x)=\beta$.
 
-            \textbf{\fangsong (技巧：面对根式，可以利用完全立方公式构造分母，便于求极限)}
-
             $\beta = \lim\limits_{x \to +\infty} (\sqrt[3]{1-x^{3}}+x) =
             \lim\limits_{x \to +\infty} -x (\sqrt[3]{ 1 + \frac{-1}{x^3} }-1)$,这里可以用等价无穷小
             $(1+x)^a -1 \sim ax$替换，则原式变为$\lim\limits_{x \to +\infty} -x\frac{1}{x^3} = 
@@ -241,5 +242,35 @@
             综上，$\alpha = -1,\beta = 0$.
             \end{mdframed}
 
+            \textbf{练习：}
 
+            已知$\exists c>0$使得$\lim\limits_{x \to \infty}[ (x^5 + 7x^4 + 2)^c - x ]$存在且不为$0$，求$c$
+            \begin{mdframed}
+            \textbf{解：}
+
+            由题意知$\lim\limits_{x \to \infty}[ (x^5 + 7x^4 + 2)^c - x ] = A$，其中$A \neq 0$.
+
+            则原式变为$\lim\limits_{x \to \infty} x^{5c} [(1 + \frac{7}{x} + \frac{2}{x^5}) - x^{1-5c}] = A$.
+
+            由于$\lim\limits_{x \to \infty} x^{5c} = +\infty$，所以$\lim\limits_{x \to \infty} [(1 + \frac{7}{x} + \frac{2}{x^5}) - x^{1-5c}] = 0$.
+
+            {\fangsong （这一步在后面详细解释）}
+
+            由于$\lim\limits_{x \to \infty} x^{1-5c} = 0$，所以$1-5c = 0$，即$c = \frac{1}{5}$.
+
+            接着回代$c = \frac{1}{5}$，则有$\lim\limits_{x \to \infty} [ (x^5 + 7x^4 + 2)^\frac{1}{5} - x ] = A$.
+
+            进行变换$\lim\limits_{x \to \infty}[ (x^5 + 7x^4 + 2)^c - x ] = 
+            \lim\limits_{x \to \infty}[x \cdot \sqrt[5]{1+\frac{7}{x}+\frac{2}{x^5}} - 1 ]$,利用$(1+x)^a -1 \sim ax$替换
+            则有$\lim\limits_{x \to \infty} x \cdot \frac{1}{5} \cdot (\frac{7}{x} + \frac{2}{x^5}) = \frac{7}{5}$.
+
+            \end{mdframed}
+
+            不难发现，在这其中我们仍然用到了无穷小与无穷大转换的思想：
+
+            \begin{center}
+                \fbox{$\lim\limits_{x \to \infty} f(x)g(x) = C$，若$\lim\limits_{x \to \infty} f(x) = +\infty$，则$\lim\limits_{x \to \infty} g(x) = \frac{C}{\infty} = 0$}
+            \end{center}
+
+            因为$\frac{C}{\infty}$实际上是无穷小，所以此处极限就是$0$，与上文提到的题目解法相同。
 \end{document}

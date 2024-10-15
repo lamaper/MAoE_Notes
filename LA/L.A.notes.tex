@@ -1,7 +1,5 @@
 \documentclass{ctexart}
-\usepackage{amsmath, amsthm, amssymb, graphicx, geometry, arydshln}
-\usepackage{tcolorbox} % box制作基本宏包
-\usepackage{varwidth} % box宽度设置需要
+\usepackage{amsmath, amsthm, amssymb, graphicx, geometry, arydshln, mdframed}
 \geometry{left=2.54cm , right=2.54cm , top=3.17cm , bottom=3.17cm}
 
 \title{Liner Algebra Notes}
@@ -62,7 +60,7 @@
             \end{itemize}
             
             {\fangsong 类似的提醒一般都需要因式分解，且常用待定系数法来解决问题}\\
-            
+            \begin{mdframed}
             解：
 
             设$(\mathbf{A}-2\mathbf{I})(\mathbf{A}+n_1\mathbf{I})=n_2\mathbf{I}$,
@@ -76,8 +74,9 @@
             
             解得：$(\mathbf{A}-2\mathbf{I})\mathbf{A}=\mathbf{I}$,
             
-            所以$(\mathbf{A}-2\mathbf{I})^{-1} = \mathbf{A}$，证毕。\\
-
+            所以$(\mathbf{A}-2\mathbf{I})^{-1} = \mathbf{A}$，证毕。
+            
+            \end{mdframed}
 
             在这个题中，用待定系数法显得比较繁琐，可以直接通过移项看出结果，但是这里介绍的是通法，是一种思想，其理论基础是：
             $$ \mathbf{AA^{-1}}~=~\mathbf{I}$$
