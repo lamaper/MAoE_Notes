@@ -1,6 +1,7 @@
 \documentclass[12pt , a4paper , oneside]{ctexart}
-\usepackage{amsmath, amsthm, amssymb, graphicx, geometry, mdframed, booktabs}
+\usepackage{amsmath, amsthm, amssymb, graphicx, geometry, mdframed, booktabs, pgfplots}
 \geometry{left=2.54cm , right=2.54cm , top=3.17cm , bottom=3.17cm}
+\pgfplotsset{compat=1.18} % 设置兼容性
 
 %introduction
 
@@ -357,13 +358,7 @@
                 e^{2ax} - e^{ax} + 1 & (x \geqslant 1)
             \end{cases}$,在$x=1$处连续，求$a$的值.
 
-            (2) 设$f(x)=\lim\limits_{x \to \infty} \frac{x^{2n+1} + (a-1)x^n - 1}{x^2n -ax^n - 1}~(a\neq 0)$:
-            
-            \qquad (i) 求$f(x)$；
-
-            \qquad (ii) 当$x \geqslant 0$时，若$f(x)$在连续，求$a$的值.
-
-            (3) 设$f(x) = \begin{cases}
+            (2) 设$f(x) = \begin{cases}
                 \frac{\sin{ax}}{\sqrt{1-\cos{x}}} & (x < 0)\\
                 b & (x = 0)\\
                 \frac{1}{x} [ \ln{x}-\ln{(x^2 + x)} ] & (x > 0)\end{cases}$
@@ -376,9 +371,6 @@
             (2) \textbf{解：}
             \end{mdframed}
 
-            \begin{mdframed}
-            (3) \textbf{解：}
-            \end{mdframed}
     \section{导数与微分}
         \subsection{常用导数}
         \begin{center}
@@ -456,9 +448,36 @@
             若$u(x) = f(x)g(x)$，则有
             $$u^{(n)} = \sum\limits_{k=0}^{n} C_n^k f^{(k)}(x)g^{(n-k)}(x)$$
             可以类比二项式定理。
+
+            \subsubsection{$f(0)=0$的妙用}
+            在本章节中，常出现$x=0$处的导数问题，通常需要利用导数定义的变形来求解，当$f(0)=0$时：
+            
+            $$f'(0) = \lim\limits_{x \to 0} \frac{f(x) - f(0)}{x - 0} = \lim\limits_{x \to 0} \frac{f(x)}{x}$$
+
+            \quad
+
         \subsection{微分}
 
         \subsection{典型例题}
+            \subsubsection{利用定义计算导数}
+            {\heiti 设$f(x)$可导，且导函数有界，$g(x)=f(x)\sin^2 x$，求$g''(0)$.}
+
+            \begin{mdframed}
+            \textbf{解：}
+
+            由题意知$g'(x) = f'(x)\sin^2 x + f(x)\sin 2x$.
+
+            由于不知道$f''(x)$是否存在，故使用定义直接求$g''(0)$.
+            
+            所以有：\\
+            $g''(0) = \lim\limits_{x \to 0} \frac{g'(x) - g'(0)}{x-0}$\\
+            $=\lim\limits_{x \to 0} \frac{f'(x)\sin^2 x + f(x)\sin 2x - f'(0)\sin^2 0 - f(0)\sin 2 \cdot 0}{x}$\\
+            $= \lim\limits_{x \to 0} \frac{f'(x)\sin^2 x + f(x)\sin 2x}{x}$ \\
+            $=\lim\limits_{x \to 0} \frac{f'(x)\sin^2 x}{x} + \lim\limits_{x \to 0} \frac{f(x)\sin2x}{x}$\\
+            $=\lim\limits_{x \to 0} f(x) \cdot x \cdot\frac{\sin^2 x}{x} + f(0) \lim\limits_{x \to 0} 2\frac{\sin 2x}{2x}$
+            $=0 + 2f(0) = 2f(0)$
+            
+            \end{mdframed}
             \subsubsection{可导性证明与分段函数的导数}
             (1) 利用函数$f(x)$在$x=a$处可导，证明$\lim\limits_{x \to a} \frac{x^2 f(a)-a^2f(x)}
             {x-a}=2af(a)-a^2 f'(a)$;
@@ -500,4 +519,39 @@
             (2) \textbf{解：}
 
             \end{mdframed}
+
+            \subsubsection{带有极限的分段函数}
+            \begin{center}
+            \begin{tikzpicture}
+		        \begin{axis}[
+			    axis lines = middle,
+			    xlabel = $x$,
+			    ylabel = {$y$},
+			    domain=-5:5, % 定义x的区间
+			    samples=100, % 采样点数量
+			    grid = major, % 显示主网格线
+			    legend pos=north west, % 图中方框的位置
+			    ]
+			    \addplot [
+			        color=black,
+			        thick,
+			    ]{exp(x)};
+			    \addlegendentry{$y = e^x$} 
+		        \end{axis}
+	        \end{tikzpicture}
+            \end{center}
+            {\fangsong 在这部分，需要利用指数函数的极限性质来求解问题。不难发现，$ \lim\limits_{x \to +\infty} e^x = +\infty$，
+            $ \lim\limits_{x \to -\infty} e^x = 0$。}
+            
+            \quad
+            
+            (1) 设$f(x)=\lim\limits_{x \to \infty} \frac{x^{2n+1} + (a-1)x^n - 1}{x^2n -ax^n - 1}~(a\neq 0)$:
+            
+            \qquad (i) 求$f(x)$；
+
+            \qquad (ii) 当$x \geqslant 0$时，若$f(x)$在连续，求$a$的值.
+
+            (2)设$f(x) = \frac{x^{2} e^{n(x+1)} +ax + b}{e^{n(x+1) + 1}}$，试确定 $a,b$使得$f(x)$在处处可导，并 $f'(x)$.
+
+
 \end{document}
