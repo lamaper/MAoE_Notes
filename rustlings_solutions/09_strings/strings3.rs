@@ -1,16 +1,16 @@
 fn trim_me(input: &str) -> &str {
-    input.trim()
+    // TODO: Remove whitespace from both ends of a string.
+    return input.trim();
 }
 
 fn compose_me(input: &str) -> String {
-    // The macro `format!` has the same syntax as `println!`, but it returns a
-    // string instead of printing it to the terminal.
-    // Equivalent to `input.to_string() + " world!"`
-    format!("{input} world!")
+    // TODO: Add " world!" to the string! There are multiple ways to do this.
+    return input.to_string() +  " world!";
 }
 
 fn replace_me(input: &str) -> String {
-    input.replace("cars", "balloons")
+    // TODO: Replace "cars" in the string with "balloons".
+    return input.replace("cars", "balloons");
 }
 
 fn main() {
