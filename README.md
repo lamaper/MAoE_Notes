@@ -9,10 +9,11 @@
 - 《工科数学分析（上）》课程与习题笔记（MAEI）
 - 《线性代数B》课程学习笔记（LA）
 - Git学习笔记
+- Rust学习笔记（rustlings_solutions)
 
 TODO：
 
 - Latex学习笔记
-- Rust学习笔记
+- 各种论文与习题
 
 需要说明的是，本仓库由我（[lamaper](https://github.com/lamaper)）和另一位同学（[Omnipotent-ys](https://github.com/Omnipotent-ys)）共同维护，如果你也想加入我们的行列，一起为学习添砖加瓦，可以通过邮箱联系我们：cmhj51951@foxmail.com
