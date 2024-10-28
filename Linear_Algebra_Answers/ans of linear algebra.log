@@ -1,10 +1,19 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.9)  28 OCT 2024 17:25
+=======
 This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.9)  17 OCT 2024 12:27
+>>>>>>> ff75dda422ddcf940f668f37ca6e0754a76074f4
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
+<<<<<<< HEAD
+**"d:/Notes/MAoE_Notes/Linear_Algebra_Answers/ans of linear algebra.tex"
+(d:/Notes/MAoE_Notes/Linear_Algebra_Answers/ans of linear algebra.tex
+=======
 **"d:/Workspace/MAoE_Notes/Linear_Algebra_Answers/ans of linear algebra.tex"
 (d:/Workspace/MAoE_Notes/Linear_Algebra_Answers/ans of linear algebra.tex
+>>>>>>> ff75dda422ddcf940f668f37ca6e0754a76074f4
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (e:/ProgramFile/texlive/2024/texmf-dist/tex/latex/ctex/ctexart.cls (e:/ProgramFile/texlive/2024/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
@@ -606,44 +615,87 @@ LaTeX Font Info:    Trying to load font information for C70+rm on input line 10.
  (e:/ProgramFile/texlive/2024/texmf-dist/tex/latex/ctex/fd/c70rm.fd
 File: c70rm.fd 2022/07/14 v2.5.10 Chinese font definition (CTEX)
 )
-Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 13.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 20.
+(mdframed)              on input line 13.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 57.
+(mdframed)              on input line 51.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
+<<<<<<< HEAD
+(mdframed)              on input line 67.
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--92
+
+ []
+
+(c:/texlive/2024/texmf-dist/tex/generic/ctex/zhmap/ctex-zhmap-windows.tex
+=======
 (mdframed)              on input line 70.
  (e:/ProgramFile/texlive/2024/texmf-dist/tex/generic/ctex/zhmap/ctex-zhmap-windows.tex
+>>>>>>> ff75dda422ddcf940f668f37ca6e0754a76074f4
 File: ctex-zhmap-windows.tex 2022/07/14 v2.5.10 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
 {e:/ProgramFile/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{UGBK.sfd}{Unicode.sfd}) [1
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
+<<<<<<< HEAD
+(mdframed)              on input line 97.
+=======
 (mdframed)              on input line 91.
 LaTeX Font Info:    Trying to load font information for C70+zhfs on input line 118.
  (e:/ProgramFile/texlive/2024/texmf-dist/tex/latex/zhmetrics/c70zhfs.fd
 File: c70zhfs.fd 2009/09/23 4.8.2
 ) [2]
 Package CJKpunct Info: use punctuation spaces for family 'zhfs' with punctstyle (quanjiao) on input line 159.
+>>>>>>> ff75dda422ddcf940f668f37ca6e0754a76074f4
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--161
+Underfull \hbox (badness 10000) in paragraph at lines 97--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--148
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
+<<<<<<< HEAD
+(mdframed)              on input line 154.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 177.
+Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (quanjiao) on input line 202.
+[2] [3] (./ans of linear algebra.aux)
+=======
 (mdframed)              on input line 161.
 [3{e:/ProgramFile/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./ans of linear algebra.aux)
+>>>>>>> ff75dda422ddcf940f668f37ca6e0754a76074f4
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+ 9520 strings out of 474116
+ 175935 string characters out of 5747717
+ 1966190 words of memory out of 5000000
+ 31633 multiletter control sequences out of 15000+600000
+ 576103 words of font info for 101 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 80i,11n,83p,828b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "ans of linear algebra.pdf" (3 pages, 210679 bytes).
+=======
  10276 strings out of 474116
  193316 string characters out of 5741681
  1967190 words of memory out of 5000000
@@ -653,9 +705,10 @@ Here is how much of TeX's memory you used:
  80i,10n,83p,832b,357s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
 Output written on "ans of linear algebra.pdf" (3 pages, 545861 bytes).
+>>>>>>> ff75dda422ddcf940f668f37ca6e0754a76074f4
 PDF statistics:
- 592 PDF objects out of 1000 (max. 8388607)
- 384 compressed objects within 4 object streams
+ 185 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
