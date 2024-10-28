@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.9)  21 OCT 2024 11:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.9)  28 OCT 2024 16:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -883,63 +883,89 @@ Package mdframed Info: mdframed detected package amsthm
  [6]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 343.
+(mdframed)              on input line 339.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 347.
+(mdframed)              on input line 356.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 351.
+(mdframed)              on input line 369.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 367.
+(mdframed)              on input line 392.
+ [7]
+Package mdframed Info: Not enough space on this page on input line 393.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 371.
- [7] [8] [9]
-LaTeX Font Info:    Trying to load font information for C70+zhhei on input line 463.
+(mdframed)              on input line 396.
+ [8] [9]
+LaTeX Font Info:    Trying to load font information for C70+zhhei on input line 488.
  (e:/ProgramFile/texlive/2024/texmf-dist/tex/latex/zhmetrics/c70zhhei.fd
 File: c70zhhei.fd 2009/09/23 4.8.2
 )
-Package CJKpunct Info: use punctuation spaces for family 'zhhei' with punctstyle (quanjiao) on input line 463.
+Package CJKpunct Info: use punctuation spaces for family 'zhhei' with punctstyle (quanjiao) on input line 488.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 466.
+(mdframed)              on input line 491.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 488.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 493.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 501.
+(mdframed)              on input line 513.
  [10]
+Package mdframed Info: Not enough space on this page on input line 515.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 514.
+(mdframed)              on input line 518.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 519.
- [11] (./M.A.E.I.notes.aux)
+(mdframed)              on input line 526.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 539.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 544.
+ [11]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 582.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 587.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 610.
+ [12]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 633.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 640.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 650.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 656.
+ [13] [14] (./M.A.E.I.notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 31459 strings out of 474116
- 779452 string characters out of 5741681
+ 31588 strings out of 474116
+ 781674 string characters out of 5741681
  1966190 words of memory out of 5000000
- 52928 multiletter control sequences out of 15000+600000
- 621011 words of font info for 267 fonts, out of 8000000 for 9000
+ 53024 multiletter control sequences out of 15000+600000
+ 626681 words of font info for 288 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,17n,107p,814b,2192s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on M.A.E.I.notes.pdf (11 pages, 670035 bytes).
+<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><e:/ProgramFile/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on M.A.E.I.notes.pdf (14 pages, 736727 bytes).
 PDF statistics:
- 751 PDF objects out of 1000 (max. 8388607)
- 501 compressed objects within 6 object streams
+ 813 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 269 words of extra memory for PDF output out of 10000 (max. 10000000)
 
