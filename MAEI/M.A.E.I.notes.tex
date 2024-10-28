@@ -1,6 +1,7 @@
 \documentclass[12pt , a4paper , oneside]{ctexart}
-\usepackage{amsmath, amsthm, amssymb, graphicx, geometry, mdframed, booktabs}
+\usepackage{amsmath, amsthm, amssymb, graphicx, geometry, mdframed, booktabs, pgfplots}
 \geometry{left=2.54cm , right=2.54cm , top=3.17cm , bottom=3.17cm}
+\pgfplotsset{compat=1.18} % 设置兼容性
 
 %introduction
 
@@ -332,22 +333,47 @@
             \subsubsection{直接求极限}
             \textbf{求下列极限：}
 
-            (1) $\lim\limits_{x \to \frac{4}{\pi}} \tan{2x} \tan{(\frac{\pi}{4}-x)}$;
-
-            (2) $\lim\limits_{x \to 1} (1-x)\tan{\frac{\pi x}{2}}$;
-
-            (3) $\lim\limits_{x \to 1} \frac{x+x^2+x^3+...+x^n - n}{x-1}$;
+            (1) $\lim\limits_{x \to \frac{\pi}{4}} \tan{2x} \tan{(\frac{\pi}{4}-x)}$;
 
             \begin{mdframed}
             (1) \textbf{解：}
+            首先需要注意的是，这个题$x \to \frac{\pi}{4}$而不是$x \to 0$，所以前面那么多的等价无穷小替换
+            在这里没有办法使用。
+    
+            如果足够敏锐，可以发现这是一个$\infty \cdot 0$的极限，我们可以通过变形使它可求。
+
+            这里使用另外的办法：
+
+            $\lim\limits_{x \to \frac{\pi}{4}} \tan{2x} \tan{(\frac{\pi}{4}-x)} =
+            \lim\limits_{x \to \frac{\pi}{4}} \frac{2\tan x}{1-\tan^2 x} \cdot \frac{1-\tan x}{1+\tan x}
+            =\lim\limits_{x \to \frac{\pi}{4}} \frac{2\tan x}{(1+\tan x)^2}=\frac{1}{2}$
+
             \end{mdframed}
+
+            (2) $\lim\limits_{x \to 1} (1-x)\tan{\frac{\pi x}{2}}$;
 
             \begin{mdframed}
             (2) \textbf{解：}
+            本题也是一个$\infty \cdot 0$的极限，首先通过换元法，把它变得正常一点：
+
+            $\lim\limits_{x \to 1} (1-x)\tan{\frac{\pi x}{2}} = 
+            \lim\limits_{t \to 0} t \cdot \tan{(\frac{\pi x}{2} - \frac{\pi x}{2} t)} = 
+            \lim\limits_{t \to 0} t \cdot \frac{1}{\tan{\frac{\pi}{2} t}}$
+
+            然后便可以由等价无穷小替换直接算出结果：
+            $\lim\limits_{t \to 0} t \cdot \frac{1}{\tan{\frac{\pi}{2} t}} = \frac{2}{\pi}$
             \end{mdframed}
 
+            (3) $\lim\limits_{x \to 1} \frac{x+x^2+x^3+...+x^n - n}{x-1}$;
             \begin{mdframed}
             (3) \textbf{解：}
+            本题证明比较巧妙，主要是通过对$n$的妙用来解决题目：
+
+            $\lim\limits_{x \to 1} \frac{x+x^2+x^3+...+x^n - n}{x-1}
+            = \lim\limits_{x \to 1} \frac{(x-1)+(x^2-1)+(x^3-1)+...+(x^n - 1)}{x-1}$
+
+            $= \lim\limits_{x \to 1} 1+(x+1)+(x^2+x+1)+\cdots+(x^{n-1}+\cdots+ 1)
+            = 1+2+3+4+\cdots+n = \frac{n(1+n)}{2}$
             \end{mdframed}
 
             \subsubsection{函数的连续性与间断点问题}
@@ -357,13 +383,7 @@
                 e^{2ax} - e^{ax} + 1 & (x \geqslant 1)
             \end{cases}$,在$x=1$处连续，求$a$的值.
 
-            (2) 设$f(x)=\lim\limits_{x \to \infty} \frac{x^{2n+1} + (a-1)x^n - 1}{x^2n -ax^n - 1}~(a\neq 0)$:
-            
-            \qquad (i) 求$f(x)$；
-
-            \qquad (ii) 当$x \geqslant 0$时，若$f(x)$在连续，求$a$的值.
-
-            (3) 设$f(x) = \begin{cases}
+            (2) 设$f(x) = \begin{cases}
                 \frac{\sin{ax}}{\sqrt{1-\cos{x}}} & (x < 0)\\
                 b & (x = 0)\\
                 \frac{1}{x} [ \ln{x}-\ln{(x^2 + x)} ] & (x > 0)\end{cases}$
@@ -376,9 +396,6 @@
             (2) \textbf{解：}
             \end{mdframed}
 
-            \begin{mdframed}
-            (3) \textbf{解：}
-            \end{mdframed}
     \section{导数与微分}
         \subsection{常用导数}
         \begin{center}
@@ -456,9 +473,36 @@
             若$u(x) = f(x)g(x)$，则有
             $$u^{(n)} = \sum\limits_{k=0}^{n} C_n^k f^{(k)}(x)g^{(n-k)}(x)$$
             可以类比二项式定理。
+
+            \subsubsection{$f(0)=0$的妙用}
+            在本章节中，常出现$x=0$处的导数问题，通常需要利用导数定义的变形来求解，当$f(0)=0$时：
+            
+            $$f'(0) = \lim\limits_{x \to 0} \frac{f(x) - f(0)}{x - 0} = \lim\limits_{x \to 0} \frac{f(x)}{x}$$
+
+            \quad
+
         \subsection{微分}
 
         \subsection{典型例题}
+            \subsubsection{利用定义计算导数}
+            {\heiti 设$f(x)$可导，且导函数有界，$g(x)=f(x)\sin^2 x$，求$g''(0)$.}
+
+            \begin{mdframed}
+            \textbf{解：}
+
+            由题意知$g'(x) = f'(x)\sin^2 x + f(x)\sin 2x$.
+
+            由于不知道$f''(x)$是否存在，故使用定义直接求$g''(0)$.
+            
+            所以有：\\
+            $g''(0) = \lim\limits_{x \to 0} \frac{g'(x) - g'(0)}{x-0}$\\
+            $=\lim\limits_{x \to 0} \frac{f'(x)\sin^2 x + f(x)\sin 2x - f'(0)\sin^2 0 - f(0)\sin 2 \cdot 0}{x}$\\
+            $= \lim\limits_{x \to 0} \frac{f'(x)\sin^2 x + f(x)\sin 2x}{x}$ \\
+            $=\lim\limits_{x \to 0} \frac{f'(x)\sin^2 x}{x} + \lim\limits_{x \to 0} \frac{f(x)\sin2x}{x}$\\
+            $=\lim\limits_{x \to 0} f(x) \cdot x \cdot\frac{\sin^2 x}{x} + f(0) \lim\limits_{x \to 0} 2\frac{\sin 2x}{2x}$
+            $=0 + 2f(0) = 2f(0)$
+            
+            \end{mdframed}
             \subsubsection{可导性证明与分段函数的导数}
             (1) 利用函数$f(x)$在$x=a$处可导，证明$\lim\limits_{x \to a} \frac{x^2 f(a)-a^2f(x)}
             {x-a}=2af(a)-a^2 f'(a)$;
@@ -500,4 +544,128 @@
             (2) \textbf{解：}
 
             \end{mdframed}
+
+            \subsubsection{带有极限的分段函数}
+            \begin{center}
+            \begin{tikzpicture}
+		        \begin{axis}[
+			    axis lines = middle,
+			    xlabel = $x$,
+			    ylabel = {$y$},
+			    domain=-5:5, % 定义x的区间
+			    samples=100, % 采样点数量
+			    grid = major, % 显示主网格线
+			    legend pos=north west, % 图中方框的位置
+			    ]
+			    \addplot [
+			        color=black,
+			        thick,
+			    ]{exp(x)};
+			    \addlegendentry{$y = e^x$} 
+		        \end{axis}
+	        \end{tikzpicture}
+            \end{center}
+            {\fangsong 在这部分，需要利用指数函数的极限性质来求解问题。不难发现，$ \lim\limits_{x \to +\infty} e^x = +\infty$，
+            $ \lim\limits_{x \to -\infty} e^x = 0$。}
+            
+            \quad
+            
+            (1) 设$f(x)=\lim\limits_{x \to \infty} \frac{x^{2n+1} + (a-1)x^n - 1}{x^2n -ax^n - 1}~(a\neq 0)$:
+            
+            \qquad (i) 求$f(x)$；
+
+            \qquad (ii) 当$x \geqslant 0$时，若$f(x)$在连续，求$a$的值.
+
+            (2)设$f(x) = \frac{x^{2} e^{n(x+1)} +ax + b}{e^{n(x+1) + 1}}$，试确定 $a,b$使得$f(x)$在处处可导，并 $f'(x)$.
+
+            \begin{mdframed}
+            (1) \textbf{解：}
+            
+            \end{mdframed}
+
+            \begin{mdframed}
+            (2) \textbf{解：}
+
+            \end{mdframed}
+
+    \section{微分中值定理与导数的应用}
+        \subsection{微分中值定理}
+            \subsubsection{罗尔定理}
+            若函数$f(x)$满足：在$[a,b]$上连续；在$(a,b)$内可导；$f(a) = f(b)$；则在$(a,b)$内至少存在一个$\xi \in (a,b)$，使得$f'(\xi) = 0$.
+
+            \subsubsection{拉格朗日中值定理}
+            如果函数$f(x)$在闭区间$[a,b]$上连续，在开区间在$(a,b)$内可导，则至少存在一点$\xi \in (a,b)$,使得
+            $$f'(\xi)=\frac{f(b)-f(a)}{b-a}$$
+
+            \subsubsection{柯西中值定理}
+            如果函数$f(x)$与$g(x)$在闭区间$[a,b]$上连续，在开区间在$(a,b)$内可导，并且在$(a,b)$内可
+            $g'(x) \neq 0$，则至少存在一点$\xi \in (a,b)$,使得
+            $$\frac{f(b)-f(a)}{g(b)-g(a)} = \frac{f'(\xi)}{g'(\xi)}$$
+            
+            \subsubsection{微分中值定理证明题}
+            (1)设实数$a_0,a_1,\cdots,a_n$满足$a_0+\frac{a_1}{2}+\frac{a_2}{3}+\cdots+\frac{a_n}{n+1}=0$
+            ,证明:方程$a_0+a_1 x+a_2 x^2+\cdots+a_n x^n=0$在$(0,1)$至少有一个实根.
+
+            \begin{mdframed}
+            (1) \textbf{解：}
+            本题考察注意力。
+
+            注意到当我们设$F(x) = a_0 x + \frac{a_1}{2} x^2 + \cdots + \frac{a_n}{n+1} x^{n+1}$时，$F(1) = 0$.
+
+            同时$F'(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n$就是我们要证明的函数.
+
+            所以由罗尔定理,对于$[0,1]$连续,$(0,1)$可导的$F(x)$,有$F(0)=F(1)$,则至少存在一个$\xi \in (0,1)$使得$F'(\xi) = 0$.
+
+            \end{mdframed}
+        \subsection{洛必达法则}
+            洛必达法则用于求解不定式极限，主要适用于$\frac{0}{0}$和$\frac{\infty}{\infty}$两种类型的不定式。
+
+            \textbf{定理：}
+            设函数$f(x)$和$g(x)$在$x=a$的某邻域内可导，且$g'(x) \neq 0$，如果
+            $$\lim\limits_{x \to a} f(x) = \lim\limits_{x \to a} g(x) = 0 \quad \text{或} \quad \lim\limits_{x \to a} f(x) = \lim\limits_{x \to a} g(x) = \pm \infty,$$
+            则
+            $$\lim\limits_{x \to a} \frac{f(x)}{g(x)} = \lim\limits_{x \to a} \frac{f'(x)}{g'(x)},$$
+
+            \textbf{例题：}
+            \begin{itemize}
+                \item 例1：求$\lim\limits_{x \to 0} \frac{\sin x}{x}$。
+                \begin{mdframed}
+                \textbf{解：}
+                直接应用洛必达法则：
+                $$\lim\limits_{x \to 0} \frac{\sin x}{x} = \lim\limits_{x \to 0} \frac{\cos x}{1} = \cos 0 = 1.$$
+                \end{mdframed}
+
+                \item 例2：求$\lim\limits_{x \to \infty} \frac{e^x}{x^2}$。
+                \begin{mdframed}
+                \textbf{解：}
+                直接应用洛必达法则：
+                $$\lim\limits_{x \to \infty} \frac{e^x}{x^2} = \lim\limits_{x \to \infty} \frac{e^x}{2x} = \lim\limits_{x \to \infty} \frac{e^x}{2} = \infty.$$
+                \end{mdframed}
+            \end{itemize}
+
+        \subsection{泰勒公式及其应用}
+            \subsubsection{泰勒公式}
+            \textbf{定理1：}
+            \begin{mdframed}
+            $f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n + o((x-a)^n)$
+            \end{mdframed}
+            其中$R_n(x) = o((x-a)^n)$称为皮亚诺余项.          
+            
+            \textbf{定理2：}
+            \begin{mdframed}
+            $f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n + R_n(x)$      
+            \end{mdframed}          
+            其中$R_n(x)=\frac{f^(n+1) (\xi)}{(n+1)!}(x-a)^{n+1}$称为拉格朗日型余项.
+
+            \subsubsection{麦克劳林公式}
+            \begin{itemize}
+                \item $e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots + \frac{x^n}{n!} + o(x^n)$
+                \item $\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots + (-1)^n \frac{x^{2n+1}}{(2n+1)!} + o(x^{2n+1})$
+                \item $\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots + (-1)^n \frac{x^{2n}}{(2n)!} + o(x^{2n})$
+                \item $\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1} \frac{x^n}{n} + o(x^n)$
+                \item $\frac{1}{1-x} = 1 + x + x^2 + \cdots + x^n + o(x^n)$
+            \end{itemize}
+            
+            \subsubsection{泰勒公式的应用}
+
 \end{document}
