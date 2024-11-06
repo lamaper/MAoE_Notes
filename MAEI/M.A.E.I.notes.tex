@@ -655,17 +655,191 @@
             \begin{mdframed}
             $f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n + R_n(x)$      
             \end{mdframed}          
-            其中$R_n(x)=\frac{f^(n+1) (\xi)}{(n+1)!}(x-a)^{n+1}$称为拉格朗日型余项.
+            其中$R_n(x)=\frac{f^{(n+1)} (\xi)}{(n+1)!}(x-a)^{n+1}$称为拉格朗日型余项.
 
             \subsubsection{麦克劳林公式}
             \begin{itemize}
                 \item $e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots + \frac{x^n}{n!} + o(x^n)$
                 \item $\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots + (-1)^n \frac{x^{2n+1}}{(2n+1)!} + o(x^{2n+1})$
                 \item $\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots + (-1)^n \frac{x^{2n}}{(2n)!} + o(x^{2n})$
+                \item $\tan x = x + \frac{x^3}{3} + \frac{2x^5}{15} + \cdots + \frac{B_{2n} x^{2n-1}}{(2n)!} + o(x^{2n-1})$
                 \item $\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots + (-1)^{n-1} \frac{x^n}{n} + o(x^n)$
+                \item $(1+x)^\alpha = 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!}x^2 + \cdots + \frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}x^n + o(x^n)$
                 \item $\frac{1}{1-x} = 1 + x + x^2 + \cdots + x^n + o(x^n)$
             \end{itemize}
+        
+        \subsection{函数的性质}
+            \subsubsection{函数的单调性}
+            \textbf{定理：}
+            \begin{mdframed}
+            若函数$f(x)$在$[a,b]$上连续，在$(a,b)$内可导，则：
+            \begin{itemize}
+                \item 若$f'(x) > 0$，则$f(x)$在$(a,b)$上单调递增；
+                \item 若$f'(x) < 0$，则$f(x)$在$(a,b)$上单调递减；
+                \item 若$f'(x) = 0$，则$f(x)$在$(a,b)$上为常数函数.
+            \end{itemize}
+            \end{mdframed}
+
+            \subsubsection{函数的极值}
+            \textbf{定理：}
+            \begin{mdframed}
+            若函数$f(x)$在$x_0$处可导，且$f'(x_0) = 0$，则：
+            \begin{itemize}
+                \item 若$f'(x)$在$x_0$两侧异号，则$f(x)$在$x_0$处取极值.
+                \item 若$f'(x)$在$x_0$两侧同号，则$f(x)$在$x_0$处无极值.
+            \end{itemize}
+            \end{mdframed}
+
+            \textbf{极值的第一充分条件：}
+            \begin{mdframed}
+            若函数$f(x)$在$x_0$处连续，在$x_0$的去心邻域$\delta$内可导，且$x_0$是$f(x)$的驻点或不可导点，则：
+            \begin{itemize}
+                \item 当$x \in (x_0 - \delta , x_0)$时，$f'(x) > 0$;
+                当$x \in (x_0  , x_0 + \delta)$时，$f'(x) < 0$;则$f(x)$在$x_0$处取极大值.
+                \item 当$x \in (x_0 - \delta , x_0)$时，$f'(x) < 0$;
+                当$x \in (x_0  , x_0 + \delta)$时，$f'(x) > 0$;则$f(x)$在$x_0$处取极小值.
+                \item 当$x \in (x_0 - \delta , x_0) \cup (x_0  , x_0 + \delta)$时，$f'(x) > 0$或$f'(x) < 0$,
+                则$f(x)$在$x_0$处无极值.
+            \end{itemize}
+            \end{mdframed}
+
+            \textbf{极值的第二充分条件：}
+            \begin{mdframed}
+            若函数$f(x)$在$x_0$处连续，在$x_0$的去心邻域$\delta$内二阶可导，且$f'(x_0) = 0$，$f''(x_0) \neq 0$，则：
+            \begin{itemize}
+                \item 当$f''(x_0) > 0$时，$f(x)$在$x_0$处取极小值；
+                \item 当$f''(x_0) < 0$时，$f(x)$在$x_0$处取极大值.
+            \end{itemize}
+            \end{mdframed}
+
+            \subsubsection{函数的凹凸性}
+            \textbf{凹凸性的定义：}
+            \begin{mdframed}
+            若函数$f(x)$在$(a,b)$上连续，对于任意$x_0 \in (a,b)$,都有：
+            $$f(x) > f(x_0) + f'(x_0) (x-x_0)$$
+            则称$f(x)$在$(a,b)$上凹函数；
+            若函数$f(x)$在$(a,b)$上连续，对于任意$x_0 \in (a,b)$,都有：
+            $$f(x) < f(x_0) + f'(x_0) (x-x_0)$$
+            则称$f(x)$在$(a,b)$上凸函数.
+            \end{mdframed}
+
+            \textbf{凹凸性的充分条件：}
+            \begin{mdframed}
+            若函数$f(x)$在$(a,b)$上二阶可导，则：
+            \begin{itemize}
+                \item 若$f''(x) > 0$，则$f(x)$在$(a,b)$上凹函数；
+                \item 若$f''(x) < 0$，则$f(x)$在$(a,b)$上凸函数.
+            \end{itemize}
+            \end{mdframed}
+
+            \textbf{定理：}
+            \begin{mdframed}
+            若函数$f(x)$在$(a,b)$上连续，在$(a,b)$内二阶可导：
             
-            \subsubsection{泰勒公式的应用}
+            若对于$(a,b)$内任意两点$x_1,x_2$，有
+            $$f(\frac{x_1+x_2}{2}) < \frac{f(x_1)+f(x_2)}{2}$$
+            则称$f(x)$在$(a,b)$上凹函数；
+            
+            若有
+            $$f(\frac{x_1+x_2}{2}) > \frac{f(x_1)+f(x_2)}{2}$$
+            则称$f(x)$在$(a,b)$上凸函数.
+            \end{mdframed}
+
+            在这里有扩展定理，即著名的 \textbf{Jensen不等式}：
+            \begin{mdframed}
+            若函数$f(x)$在$(a,b)$上连续，在$(a,b)$内二阶可导，且$f''(x) > 0$，\\
+            则对于任意$x_1,x_2,\cdots,x_n \in (a,b)$，以及任意$n$个正数$\lambda_1,\lambda_2,\cdots,\lambda_n$，满足$\sum\limits_{i=1}^{n} \lambda_i = 1$，有
+            $$f(\sum\limits_{i=1}^{n} \lambda_i x_i) < \sum\limits_{i=1}^{n} \lambda_i f(x_i)$$
+
+            同理，若$f''(x) < 0$，则有
+            $$f(\sum\limits_{i=1}^{n} \lambda_i x_i) > \sum\limits_{i=1}^{n} \lambda_i f(x_i)$$
+
+            还有一种易读的形式
+            
+            对于任意凹函数，都有：
+            $$f(\frac{x_1 + x_2 + \cdots + x_n}{n}) > \frac{f(x_1) + f(x_2) + \cdots + f(x_n)}{n}$$
+
+            对于任意凸函数，都有：
+            $$f(\frac{x_1 + x_2 + \cdots + x_n}{n}) < \frac{f(x_1) + f(x_2) + \cdots + f(x_n)}{n}$$
+
+            \end{mdframed}
+
+            \subsubsection{函数的拐点}
+            \textbf{拐点的定义：}
+            \begin{mdframed}
+            若函数$f(x)$在$x_0$处连续，在$x_0$的去心邻域$\delta$内二阶可导，且$f'(x_0) = 0$，则：
+            \begin{itemize}
+                \item 当$f''(x_0)$在$x_0$两侧异号，则$f(x)$在$x_0$处取拐点.
+                \item 当$f''(x_0)$在$x_0$两侧同号，则$f(x)$在$x_0$处无拐点.
+                \item 当$f''(x_0)$在$x_0$两侧为零，则$f(x)$在$x_0$处可能有拐点，也可能无拐点.
+            \end{itemize}
+            \end{mdframed}
+
+            \subsubsection{函数的渐近线}
+            \textbf{垂直渐近线：}
+            \begin{mdframed}
+            若函数$f(x)$在$x_0$处连续，在$x_0$的去心邻域$\delta$内可导，且$\lim\limits_{x \to x_0} f'(x) = \pm \infty$，则直线$x = x_0$称为$f(x)$的垂直渐近线.
+            \end{mdframed}
+
+            \textbf{水平渐近线：}
+            \begin{mdframed}
+            若$\lim\limits_{x \to \infty} f(x) = A$，则直线$y = A$称为$f(x)$的水平渐近线.
+            \end{mdframed}
+
+            \textbf{斜渐近线：}
+            \begin{mdframed}
+            若$\lim\limits_{x \to \infty} [f(x) - (ax+b)] = 0$，则直线$y = ax+b$称为$f(x)$的斜渐近线.  
+            \end{mdframed}
+
+        \subsection{曲线的曲率}
+            \textbf{曲率的定义：}
+            \begin{mdframed}
+            设曲线$y=f(x)$在点$M(x_0,y_0)$处可导，且$f'(x)$在$x_0$的某邻域内连续，且$f'(x) \neq 0$，则曲线$y=f(x)$在点$M(x_0,y_0)$处的曲率为
+            $$K = \frac{|f''(x_0)|}{[1+(f'(x_0))^2]^{\frac{3}{2}}}$$
+            \end{mdframed}
+            
+            \textbf{弧微分：}
+            \begin{mdframed}
+            设曲线$y=f(x)$在点$M(x_0,y_0)$处可导，且$f'(x)$在$x_0$的某邻域内连续，且$f'(x) \neq 0$，则曲线$y=f(x)$在点$M(x_0,y_0)$处的弧微分为
+            $$ds = \sqrt{1+(f'(x))^2}dx$$
+            \end{mdframed}
+
+            \textbf{曲率圆：}
+            \begin{mdframed}
+            设曲线$y=f(x)$在点$M(x_0,y_0)$处可导，且$f'(x)$在$x_0$的某邻域内连续，且$f'(x) \neq 0$，则曲线$y=f(x)$在点$M(x_0,y_0)$处的曲率圆为
+            $$\begin{cases}
+                x = x_0 + \frac{1}{K} \cos \theta\\
+                y = y_0 + \frac{1}{K} \sin \theta
+            \end{cases}$$
+
+            其中$\theta$为曲线$y=f(x)$在点$M(x_0,y_0)$处的切线与$x$轴的夹角.
+
+            曲率半径为$R = \frac{1}{K}$.
+
+            曲率中心$(\xi,\eta)$为$$\begin{cases}
+                \xi = x_0 - \frac{f'(x_0)[1+(f'(x_0))^2]}{f'(x_0)}\\
+                \eta = y_0 + \frac{1+(f'(x_0))^2}{f''(x_0)}
+            \end{cases}$$
+
+            \end{mdframed}
+
+        \subsection{典型题目}
+            \subsubsection{抽象函数的洛必达应用}
+            1. 设$f(x)$在$(-\infty , +\infty)$内具有二阶导数，且$f(0)=f'(0)=0$，\\试求
+            $g(x)=\begin{cases}
+                \frac{f(x)}{x} & x \neq 0\\
+                0 & x = 0
+            \end{cases}$
+            的导数。
+
+            2.设$f(x)$在$a$邻域可导，且在$a$处二阶可导，求$
+            \lim\limits_{h \to 0}\frac{f(a+h)+f(a-h)-2f(a)}{h^2}$
+
+            \begin{mdframed}
+            1. \textbf{解：}
+            当$x = 0$时，$g'(0) = \lim\limits_{x \to 0} \frac{g(x) - g(0)}{x} = 
+            \lim\limits_{x \to 0} \frac{f(x)}{x^2} = \lim\limits_{x \to 0} \frac{f'(x)}{2x}$(洛必达法则)\\
+            $= \lim\limits_{x \to 0} \frac{f'(x)}{2x} = \lim\limits_{x \to 0} $.
+            \end{mdframed}
 
 \end{document}
